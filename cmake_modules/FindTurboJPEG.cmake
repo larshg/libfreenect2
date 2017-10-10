@@ -14,7 +14,7 @@ FIND_PATH(TurboJPEG_INCLUDE_DIRS
     "/opt/local" # macports
     "C:/libjpeg-turbo64"
     "/opt/libjpeg-turbo"
-    ENV TurboJPEG_ROOT
+    $ENV{TurboJPEG_ROOT}
   PATH_SUFFIXES
     include
 )
@@ -32,7 +32,7 @@ FIND_LIBRARY(TurboJPEG_LIBRARIES
     "/opt/local" # macports
     "C:/libjpeg-turbo64"
     "/opt/libjpeg-turbo"
-    ENV TurboJPEG_ROOT
+    $ENV{TurboJPEG_ROOT}
   PATH_SUFFIXES
     lib
     lib64
@@ -46,7 +46,7 @@ FIND_FILE(TurboJPEG_DLL
     "${DEPENDS_DIR}/libjpeg_turbo"
     "${DEPENDS_DIR}/libjpeg-turbo64"
     "C:/libjpeg-turbo64"
-    ENV TurboJPEG_ROOT
+    $ENV{TurboJPEG_ROOT}
   PATH_SUFFIXES
     bin
 )
